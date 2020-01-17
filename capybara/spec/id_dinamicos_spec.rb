@@ -8,7 +8,7 @@ describe 'IDs Dinâmicos', :ids_dinamicos do
   # * => contem
 
   it 'cadastro' do
-    find('input[id$=UsernameInput]').set 'fernando'
+    find('input[id$=UsernameInput]').set 'daniela'
     find('input[id^=PasswordInput]').set '123456'
     find('a[id*=GetStartedButton]').click
 

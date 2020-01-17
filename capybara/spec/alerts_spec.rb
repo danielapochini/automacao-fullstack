@@ -33,11 +33,11 @@ describe 'Alertas de JS', :alerts do
   end
 
   it 'accept prompt', :accept_promp do
-    accept_prompt(with: 'Fernando') do
+    accept_prompt(with: 'Daniela') do
       click_button 'Prompt'
       sleep 3 # use se ficar lento (somente para entender o funcionamento do accept_prompt)
     end
 
-    expect(page).to have_content 'Olá, Fernando'
+    expect(page).to have_content 'Olá, Daniela'
   end
 end
