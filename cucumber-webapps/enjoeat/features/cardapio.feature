@@ -3,7 +3,7 @@
 Funcionalidade: Cardápio    
     Para que eu possa decidir o que pretendo comer
     Sendo um usuário que escolheu um restaurante
-    Posso acesser o cardápio
+    Posso acessar o cardápio
 
     @cardapio
     Cenario: Produto disponível

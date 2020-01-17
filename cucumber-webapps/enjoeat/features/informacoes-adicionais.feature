@@ -11,6 +11,6 @@ Funcionalidade: Informações Adicionais
         Dado que acesso a lista de restaurantes
         Quando eu escolho o restaurante "Burger House"
         Então eu vejo as seguintes informacoes adicionais:
-            | Categoria | Hamburgues                               |
-            | Descrição | 40 anos se especializando em trash food. |
-            | Horários  | Funciona todos os dias, de 10h às 22h    |
+            | Categoria | Hamburguers                               |
+            | Descrição | 40 anos se especializando em trash food.  |
+            | Horários  | Funciona todos os dias, de 10h às 22h     |
