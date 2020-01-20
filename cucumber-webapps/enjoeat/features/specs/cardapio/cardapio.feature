@@ -5,10 +5,12 @@ Funcionalidade: Cardápio
     Sendo um usuário que escolheu um restaurante
     Posso acessar o cardápio
 
+
+    Contexto: Restaurantes
+        Dado que acesso a lista de restaurantes
+
     @cardapio
     Cenario: Produto disponível
-
-        Dado que acesso a lista de restaurantes
         Quando eu escolho o restaurante "Burger House"
         Então vejo os seguintes itens disponíveis no cardápio:
             | produto        | descricao                       | preco    |
@@ -17,6 +19,5 @@ Funcionalidade: Cardápio
             | Refrigerante   | O refri mais gelado da cidade.  | R$ 4,50  |
 
     Cenário: Carrinho vazio
-
         Quando eu escolho o restaurante "Burger House"
         Então vejo a seguinte mensagem no carrinho "Seu carrinho está vazio!"
