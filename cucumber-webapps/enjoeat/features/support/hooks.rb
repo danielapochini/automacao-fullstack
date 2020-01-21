@@ -1,7 +1,9 @@
 Before do 
     page.current_window.resize_to(1366,768)
 
-    @cart_page = CartPage.new
+    @rest_page = RestaurantPage.new
+    @restlist_page = RestaurantListPage.new
+    
 end
 
 Before('@bread_bakery') do 
