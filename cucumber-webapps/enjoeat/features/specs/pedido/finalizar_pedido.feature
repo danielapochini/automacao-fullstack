@@ -24,7 +24,8 @@ Funcionalidade: Finalizar Pedido
     #     E clico na forma de pagamento "Cartão Refeição"
     #     Quando eu clico em "Finalizar Pedido"
     #     Então devo ver uma mensagem de sucesso 
-        
+
+    @smoke    
     Cenário: Finalizar pedido com Cartão Refeição
 
         Dado que eu fechei o pedido com os itens:

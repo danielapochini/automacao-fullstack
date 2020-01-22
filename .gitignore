@@ -1,5 +1,6 @@
 *.log
-log/*
+log/
+report
 Gemfile.lock
 *.gem
 *.rbc

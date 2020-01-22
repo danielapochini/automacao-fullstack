@@ -6,6 +6,7 @@ Funcionalidade: Adicionar ao carrinho
     Sendo um cliente que já decididu o que deseja comer
     Posso adicionar itens ao meu carrinho
 
+    @smoke
     Cenário: Adicionar 1 unidade
 
         Dado que o produto desejado é "Cup Cake"
