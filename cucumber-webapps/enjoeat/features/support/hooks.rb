@@ -3,7 +3,7 @@ Before do
 
     @rest_page = RestaurantPage.new
     @restlist_page = RestaurantListPage.new
-    
+    @order_page = OrderPage.new
 end
 
 Before('@bread_bakery') do 

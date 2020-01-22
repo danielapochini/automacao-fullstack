@@ -78,17 +78,17 @@ Dado("que adicionei os seguintes itens no carrinho:") do |table|
 end
   
 Quando("eu fecho o meu carrinho") do
-
+    @rest_page.cart.close
 end
   
-Então("o valor total de itens deve ser igual a {string}") do |string|
-
+Então("o valor total de itens deve ser igual a {string}") do |total_items|
+    expect(@order_page.cost_shipping[0]).to have_text total_items
 end
   
-Então("o valor do frete deve ser igual a {string}") do |string|
-
+Então("o valor do frete deve ser igual a {string}") do |shipping|
+    expect(@order_page.cost_shipping[1]).to have_text shipping
 end
   
-Então("o valor total da compra deve ser igual a {string}") do |string|
-
+Então("o valor total da compra deve ser igual a {string}") do |total_cart|
+    expect(@order_page.cost_shipping[2]).to have_text total_cart
 end
