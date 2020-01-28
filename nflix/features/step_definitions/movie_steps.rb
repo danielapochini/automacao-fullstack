@@ -13,3 +13,7 @@ Então("devo ver o novo filme na lista") do
     expect(result).to have_text @movie["title"]
     expect(result).to have_text @movie["status"]
 end
+
+Então("devo ver a notificação {string}") do |expect_alert|
+    expect(@movie_page.alert).to eql expect_alert
+end
