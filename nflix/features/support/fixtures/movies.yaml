@@ -30,6 +30,22 @@ deadpool2:
   cast: ["Ryan Reynolds", "Josh Brolin"]
   overview: "O supersoldado Cable vem do futuro com a missão de detonar um jovem mutante e o Dedpool deve salvá-lo"
   cover: "dp2.jpg"
+dbz:
+  title: "Dragon Ball Evolution"
+  status: "Disponível"
+  year: 2009
+  release_date: "10/07/2009"
+  cast: []
+  overview: ""
+  cover: "dbz.jpg"
+10_coisas:
+  title: "10 Coisas Que Eu Odeio Em Você"
+  status: "Disponível"
+  year: 1999
+  release_date: "10/07/1999"
+  cast: []
+  overview: ""
+  cover: "10-coisas.jpg"
 no_title:
   title: ""
   status: "Disponível"
