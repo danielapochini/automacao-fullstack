@@ -3,7 +3,11 @@ Dado("que {string} é um novo filme") do |movie_code|
     @movie = file[movie_code]
     Database.new.delete_movie(@movie["title"])
 end
-  
+
+Dado("este filme já existe no catálogo") do
+    Database.new.insert_movie(@movie)
+end
+
 Quando("eu faço o cadastro deste filme") do
     @movie_page.add
     @movie_page.create(@movie)
@@ -17,4 +21,5 @@ end
 
 Então("devo ver a notificação {string}") do |expect_alert|
     expect(@movie_page.alert).to eql expect_alert
+    sleep 5
 end

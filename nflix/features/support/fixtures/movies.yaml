@@ -22,6 +22,14 @@ jocker:
   cast: ["Joaquin Phoenix"]
   overview: "O comediante falido Arthur Fleck encontra violentos bandidos pelas ruas de Gotham City."
   cover: "coringa.jpg"
+deadpool2:
+  title: "Deadpool 2"
+  status: "Disponível"
+  year: 2018
+  release_date: "01/05/2018"
+  cast: ["Ryan Reynolds", "Josh Brolin"]
+  overview: "O supersoldado Cable vem do futuro com a missão de detonar um jovem mutante e o Dedpool deve salvá-lo"
+  cover: "dp2.jpg"
 no_title:
   title: ""
   status: "Disponível"
