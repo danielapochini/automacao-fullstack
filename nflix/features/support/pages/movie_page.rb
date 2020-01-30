@@ -71,6 +71,6 @@ class MoviePage
     end
 
     def has_movie(title)
-    
+        page.has_css?("table tbody tr", text: title)
     end
 end

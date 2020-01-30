@@ -48,6 +48,6 @@ Quando("cancelo a solicitação") do
 end
   
 Então("este item deve permanecer no catálogo") do
-
+    expect(@movie_page.has_movie(@movie["title"])).to be true
 end
   
