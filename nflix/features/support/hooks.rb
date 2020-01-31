@@ -12,3 +12,11 @@ Before("@login") do
     @login_page.go
     @login_page.with(user["email"], user["password"])
 end
+
+After do |scenario|
+    #if scenario.failed?
+    shot_file = page.save_screenshot("log/screenshot.png")
+    shot_b64 = Base64.encode64(File.open(shot_file, "rb").read)
+    embed(shot_b64, "image/png", "Screenshot")
+    #end
+  end
