@@ -1,0 +1,8 @@
+---
+default: -p dev -p firefox
+dev: ENV_TYPE=dev
+dev_toolbox: ENV_TYPE=dev_toolbox
+hmg: ENV_TYPE=hmg
+firefox: BROWSER=firefox
+chrome: BROWSER=chrome
+headless: BROWSER=headless
