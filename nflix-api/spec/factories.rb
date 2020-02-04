@@ -11,4 +11,10 @@ FactoryBot.define do
             Database.new.delete_user(user.email)
         end
     end
+
+    factory :user_wrong_email, class: UserModel do
+        full_name {"Daniela Pochini"}
+        email {"qaninja#papito.io"}
+        password {"teste1234"}
+    end
 end
