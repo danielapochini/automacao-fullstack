@@ -1,8 +1,7 @@
 describe "post" do
     context "when new user" do
         before do
-            @new_user = {full_name:  "Daniela Pochini", email: "eu@papito.io", password: "jarvis123"}
-            Database.new.delete_user(@new_user[:email])
+            @new_user = build(:user).to_hash
             
             @result = HTTParty.post(
                 "http://localhost:3000/user",
