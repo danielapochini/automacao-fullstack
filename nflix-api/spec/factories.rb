@@ -13,6 +13,7 @@ FactoryBot.define do
     end
 
     factory :registered_user, class: UserModel do
+        id { 0 }
         full_name {"Daniela Pereira"}
         email {"eu@papito.io"}
         password {"teste1234"}
@@ -20,7 +21,8 @@ FactoryBot.define do
         after(:build) do |user|
             #puts "apagando o email " + user.email
             Database.new.delete_user(user.email)
-            ApiUser.save(user.to_hash)
+            result = ApiUser.save(user.to_hash)
+            user.id = result.parsed_response["id"]
         end
     end
 
@@ -54,12 +56,12 @@ FactoryBot.define do
     end
     
     factory :null_email_user, class: UserModel do
-        full_name { "Fernando Papito" }
+        full_name { "Daniela Pochini" }
         password { "jedi123" }
     end
     
     factory :null_password_user, class: UserModel do
-        full_name { "Fernando Papito" }
-        email { "papito@jedi.com" }
+        full_name { "Daniela Pochini" }
+        email { "pochini@jedi.com" }
     end
 end
