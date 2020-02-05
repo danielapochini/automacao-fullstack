@@ -47,4 +47,19 @@ FactoryBot.define do
         email {"qaninja@papito.io"}
         password {""}   
     end
+
+    factory :null_name_user, class: UserModel do
+        email { "papito@jedi.com" }
+        password { "jedi123" }
+    end
+    
+    factory :null_email_user, class: UserModel do
+        full_name { "Fernando Papito" }
+        password { "jedi123" }
+    end
+    
+    factory :null_password_user, class: UserModel do
+        full_name { "Fernando Papito" }
+        email { "papito@jedi.com" }
+    end
 end
