@@ -1,3 +1,4 @@
+require "faker"
 require_relative "models/user_model"
 
 FactoryBot.define do
@@ -14,8 +15,8 @@ FactoryBot.define do
 
     factory :registered_user, class: UserModel do
         id { 0 }
-        full_name {"Daniela Pereira"}
-        email {"eu@papito.io"}
+        full_name {Faker::Movies::StarWars.character}
+        email { Faker::Internet.free_email(name: full_name)}
         password {"teste1234"}
 
         after(:build) do |user|
