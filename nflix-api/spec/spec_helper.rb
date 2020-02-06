@@ -18,4 +18,8 @@ RSpec.configure do |config|
   config.shared_context_metadata_behavior = :apply_to_host_groups
 
   config.include FactoryBot::Syntax::Methods
+
+  config.before :all do
+    Database.new.clean_db
+  end
 end
