@@ -1,8 +1,8 @@
 require "httparty"
 require "factory_bot"
 
-require_relative "factories"
-require_relative "database"
+require_relative "lib/factories"
+require_relative "lib/database"
 require_relative "services/user"
 
 RSpec.configure do |config|

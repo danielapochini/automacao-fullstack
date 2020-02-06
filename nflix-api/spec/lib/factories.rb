@@ -1,5 +1,5 @@
 require "faker"
-require_relative "models/user_model"
+require_relative "../models/user_model"
 
 FactoryBot.define do
     factory :user, class: UserModel do
