@@ -13,6 +13,10 @@ class ApiUser
         post("/user", body: user.to_json)
     end
 
+    def self.update(token, user_id, user)
+        put("/user/#{user_id}", body: user.to_json, headers: {"Authorization" => token })
+    end
+
     def self.find(token, user_id)
         get("/user/#{user_id}", headers: {"Authorization" => token })
     end
